@@ -1,0 +1,25 @@
+  /* базовое оформление страницы */
+  body {
+      font-family: 'Russo One', sans-serif;
+      background-color: #2d2d2f; /* общий фон */
+      color: #9a8866;            /* базовый цвет текста */
+  }
+table {
+    background-color: #2d2d2f; /* фон таблицы */
+    color: #c7c5b3; /* светлый цвет текста по умолчанию */
+}
+
+th {
+    background-color: #2d2d2f; /* фон хэдера */
+    color: #9a8866;             /* цвет заголовков (тёмно-золотистый) */
+    font-weight: 700;
+}
+
+td {
+    background-color: #393957; /* чуть светлее фон для контраста */
+    color: #c7c5b3;            /* светлый золотистый цвет текста */
+    font-weight: 400;
+}
+tr:hover td {
+    background-color: #4a4a6d; /* подсветка при наведении */
+}
