@@ -17,7 +17,7 @@ public class GraphQLService {
 		
 		HttpClient client = HttpClient.newBuilder().build();
 		String query = """
-				{ "query" : "{items {id name shortName description basePrice weight link iconLink baseImageLink inspectImageLink image512pxLink avg24hPrice changeLast48h changeLast48hPercent}}"}
+				{ "query": "{items {id name shortName description basePrice weight link iconLink baseImageLink inspectImageLink image512pxLink avg24hPrice changeLast48h changeLast48hPercent}}"}
 				""";
 		
 		HttpRequest request = HttpRequest.newBuilder()
@@ -37,7 +37,7 @@ public class GraphQLService {
 		HttpClient client = HttpClient.newBuilder().build();
 
 		String query = String.format("""
-				{"query" : "{items(categoryNames: [%s]) {name inspectImageLink shortName basePrice avg24hPrice changeLast48h changeLast48hPercent }}"}
+				{"query": "{items(categoryNames: [%s]) {name inspectImageLink shortName basePrice avg24hPrice changeLast48h changeLast48hPercent }}"}
 				""", category);
 		
 		HttpRequest request = HttpRequest.newBuilder()

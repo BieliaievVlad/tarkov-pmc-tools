@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PMC Tools</title>
-<link rel="stylesheet"
-	href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
 </head>
 <body>
 	<div th:fragment="navbar">
@@ -20,26 +19,49 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
-						<li class="nav-item"><a class="nav-link" href="/items">Items</a></li>
-						<li class="nav-item"><a class="nav-link" href="/items?category=Ammo">Ammo</a></li>
-						<li class="nav-item"><a class="nav-link" href="/items?category=Weapon">Weapons</a></li>
-						<li class="nav-item"><a class="nav-link" href="/items?category=Armor">Armor</a></li>
-						<li class="nav-item"><a class="nav-link" href="/items?category=ChestRig">Chest rigs</a></li>
-						<li class="nav-item"><a class="nav-link" href="/items?category=Headwear">Head wear</a></li>
+						<li class="nav-item"><a class="nav-link" href="/allAmmo">Ammo</a></li>						
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWeapons" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Weapons
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownWeapons">
+								<li><a class="dropdown-item" href="/items?category=Shotgun">Shotguns</a></li>
+								<li><a class="dropdown-item" href="/items?category=AssaultRifle">Assault rifles</a></li>
+								<li><a class="dropdown-item" href="/items?category=AssaultCarbine">Assault carbines</a></li>
+								<li><a class="dropdown-item" href="/items?category=SMG">SMGs</a></li>
+								<li><a class="dropdown-item" href="/items?category=Machinegun">Machineguns</a></li>
+								<li><a class="dropdown-item" href="/items?category=MarksmanRifle">Marksman rifles</a></li>
+								<li><a class="dropdown-item" href="/items?category=SniperRifle">Sniper rifles</a></li>
+								<li><a class="dropdown-item" href="/items?category=Handgun">Handguns</a></li>
+								<li><a class="dropdown-item" href="/items?category=Revolver">Revolvers</a></li>
+								<li><a class="dropdown-item" href="/items?category=GrenadeLauncher">Grenade launchers</a></li>
+								<li><a class="dropdown-item" href="/items?category=RocketLauncher">Rocket launchers</a></li>
+								<li><a class="dropdown-item" href="/items?category=Knife">Rocket launchers</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWeapons" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Equipment
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownWeapons">
+								<li><a class="dropdown-item" href="/items?category=Armor">Armor</a></li>
+								<li><a class="dropdown-item" href="/items?category=ChestRig">Chest rigs</a></li>
+								<li><a class="dropdown-item" href="/items?category=Headwear">Headwear</a></li>
+								<li><a class="dropdown-item" href="/items?category=Headphones">Headphones</a></li>
+							</ul>
+						</li>
 					</ul>
-
+					
 					<div class="navbar-nav ms-auto"  sec:authorize="isAuthenticated()">
 						Hello,&nbsp;<span sec:authentication="name"></span>!
 					</div>
 					<div class="navbar-nav ms-auto"  sec:authorize="isAnonymous()">Hello, Guest!</div>
 
 					<div class="navbar-nav ms-auto" sec:authorize="isAnonymous()">
-						<li class="nav-item"><a class="btn btn-primary" href="/login">Login</a>
-						</li>
+						<li class="nav-item"><a class="btn btn-primary" href="/login">Login</a></li>
 					</div>
 					<div class="navbar-nav ms-auto" sec:authorize="isAuthenticated()">
-						<li class="nav-item"><a class="btn btn-primary"
-							href="/logout">Logout</a></li>
+						<li class="nav-item"><a class="btn btn-primary" href="/logout">Logout</a></li>
 					</div>
 				</div>
 			</div>
