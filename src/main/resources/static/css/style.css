@@ -30,6 +30,13 @@ tr:hover td {
     flex-wrap: wrap; /* чтобы на маленьких экранах всё становилось в колонку */
     margin-bottom: 20px;
 }
+.mid-section {
+	display: flex;
+	align-items: flex-start;
+	gap: 50px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
 
 .ammo-image {
     max-width: 250px;

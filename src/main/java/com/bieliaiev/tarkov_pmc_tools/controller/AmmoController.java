@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.bieliaiev.tarkov_pmc_tools.dto.BuyForDto;
 import com.bieliaiev.tarkov_pmc_tools.dto.ammo.AmmoDto;
 import com.bieliaiev.tarkov_pmc_tools.service.ammo.AmmoService;
 
@@ -39,13 +40,17 @@ public class AmmoController {
 	
 	@GetMapping("/ammo")
 	public String showAmmoPage(@RequestParam String normalizedName, Model model) {
-		
+
+		AmmoDto ammo;
 		try {
-			model.addAttribute("ammo", service.getAmmoByNormalizedName(normalizedName));
+			ammo = service.getAmmoByNormalizedName(normalizedName);
+			List<BuyForDto> buyFor = ammo.getBuyFor();
+			model.addAttribute("ammo", ammo);
+			model.addAttribute("buyFor", buyFor);
 		} catch (IOException | InterruptedException e) {
 			e.printStackTrace();
 		}
-		
+
 		return "ammo";
 	}
 }

@@ -6,8 +6,11 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import com.bieliaiev.tarkov_pmc_tools.cache.AmmoCache;
 import com.bieliaiev.tarkov_pmc_tools.dto.ammo.AmmoDto;
 import com.bieliaiev.tarkov_pmc_tools.dto.ammo.AmmoPropertiesDto;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -20,11 +23,23 @@ import lombok.RequiredArgsConstructor;
 public class AmmoService {
 
 	private final AmmoGraphQLService service;
+	private final AmmoCache ammoCache;
+	private Logger logger = LoggerFactory.getLogger(AmmoService.class);
 	
 	public List<AmmoDto> getAmmoList() throws IOException, InterruptedException {
 		
-		String response = service.getAllAmmo();
+		String response = "";
+		Optional<String> json = ammoCache.getIfValid();
 		
+		if (json.isPresent()) {
+			logger.info("Cached ammo json returned.");
+			response = json.get();
+			
+		} else {
+		    logger.info("Cached ammo json updated.");
+			response = service.getAllAmmo();
+		}
+	
 		ObjectMapper mapper = new ObjectMapper();
 		JsonNode root = mapper.readTree(response);
 		JsonNode ammoNode = root.path("data").path("items");

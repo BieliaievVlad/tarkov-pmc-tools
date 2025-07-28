@@ -7,75 +7,111 @@
 <link rel="stylesheet"
 	href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Russo+One:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Russo+One:wght@400;700&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro&display=swap"
+	rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
 <body>
 
 	<div th:replace="~{layout :: navbar}"></div>
 
-<div class="ammo-details mt-3">
-  <h2 th:text="${ammo.name}"></h2>
+	<div class="container-fluid mt-3">
+		<h2 th:text="${ammo.name}"></h2>
 
-  <div class="top-section">
-    <img class="ammo-image" th:src="${ammo.inspectImageLink}"/>
-    <div class="description-box" th:text="${ammo.description}"></div>
-  </div>
-  
-  <table class="table table-bordered" style="max-width: 400px;">
-    <tbody>
-      <tr>
-        <th>Caliber</th>
-        <td th:text="${ammo.properties.caliber}">-</td>
-      </tr>
-      <tr>
-        <th>Damage</th>
-        <td th:text="${ammo.properties.damage}">-</td>
-      </tr>
-      <tr>
-        <th>Armor Damage</th>
-        <td th:text="${ammo.properties.armorDamage}">-</td>
-      </tr>
-      <tr>
-        <th>Penetration Power</th>
-        <td th:text="${ammo.properties.penetrationPower}">-</td>
-      </tr>
-      <tr>
-        <th>Ammo Type</th>
-        <td th:text="${ammo.properties.ammoType}">-</td>
-      </tr>
-      <tr>
-        <th>Projectile Count</th>
-        <td th:text="${ammo.properties.projectileCount}">-</td>
-      </tr>
-      <tr>
-        <th>Accuracy Modifier</th>
-        <td th:text="${ammo.properties.accuracyModifier}">-</td>
-      </tr>  
-      <tr>
-        <th>Recoil Modifier</th>
-        <td th:text="${ammo.properties.recoilModifier}">-</td>
-      </tr>
-      <tr>
-        <th>Initial Speed, m/s</th>
-        <td th:text="${ammo.properties.initialSpeed}">-</td>
-      </tr>  
-      <tr>
-        <th>Ballistic Coeficient</th>
-        <td th:text="${ammo.properties.ballisticCoeficient}">-</td>
-      </tr> 
-      <tr>
-        <th>Bullet Diameter, mm</th>
-        <td th:text="${ammo.properties.bulletDiameterMilimeters}">-</td>
-      </tr>
-      <tr>
-        <th>Bullet Mass, g</th>
-        <td th:text="${ammo.properties.bulletMassGrams}">-</td>
-      </tr>             
-    </tbody>
-  </table>
-</div>
+		<div class="top-section">
+			<img class="ammo-image" th:src="${ammo.inspectImageLink}" />
+			<div class="description-box" th:text="${ammo.description}"></div>
+		</div>
+		<div class="mt-3">
+			<table class="table table-bordered" style="width: 400px">
+				<tbody>
+					<th:block th:each="buyFor : ${buyFor}">
+						<tr>
+							<td th:text="${buyFor.vendor.name}" style="width:200px"></td>
+							<td th:text="${buyFor.price +' '+ buyFor.currency}" style="width:200px"></td>
+						</tr>
+					</th:block>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="mid-section">
+			<table class="table table-bordered" style="max-width: 400px;">
+				<tbody>
+					<tr>
+						<th>Caliber</th>
+						<td th:text="${ammo.properties.caliber}">-</td>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<td th:text="${ammo.properties.damage}">-</td>
+					</tr>
+					<tr>
+						<th>Armor Damage</th>
+						<td th:text="${ammo.properties.armorDamage}">-</td>
+					</tr>
+					<tr>
+						<th>Penetration Power</th>
+						<td th:text="${ammo.properties.penetrationPower}">-</td>
+					</tr>
+					<tr>
+						<th>Ammo Type</th>
+						<td th:text="${ammo.properties.ammoType}">-</td>
+					</tr>
+					<tr>
+						<th>Projectile Count</th>
+						<td th:text="${ammo.properties.projectileCount}">-</td>
+					</tr>
+					<tr>
+						<th>Accuracy Modifier</th>
+						<td th:text="${ammo.properties.accuracyModifier}">-</td>
+					</tr>
+					<tr>
+						<th>Recoil Modifier</th>
+						<td th:text="${ammo.properties.recoilModifier}">-</td>
+					</tr>
+					<tr>
+						<th>Initial Speed, m/s</th>
+						<td th:text="${ammo.properties.initialSpeed}">-</td>
+					</tr>
+					<tr>
+						<th>Ballistic Coeficient</th>
+						<td th:text="${ammo.properties.ballisticCoeficient}">-</td>
+					</tr>
+					<tr>
+						<th>Bullet Diameter, mm</th>
+						<td th:text="${ammo.properties.bulletDiameterMilimeters}">-</td>
+					</tr>
+					<tr>
+						<th>Bullet Mass, g</th>
+						<td th:text="${ammo.properties.bulletMassGrams}">-</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table table-bordered" style="max-width: 450px">
+				<thead>
+					<tr>
+						<th colspan="2" class="text-center"> Related Weapons</th>
+					</tr>
+					
+				</thead>
+				<tbody>
+					<tr>
+						<td style="width: 150px">
+							<img th:src="${ammo.inspectImageLink}" style="max-width: 140px"/>	
+						</td>
+							<th th:text="${ammo.properties.ammoType}"></th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
 
 	<script src="/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
 </body>

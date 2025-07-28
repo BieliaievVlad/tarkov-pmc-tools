@@ -8802,3 +8802,851 @@ java.lang.IllegalArgumentException: The 'request','session','servletContext' and
 2025-07-27 14:29:18,215 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-3] Cached ammo json returned.
 2025-07-27 14:29:18,219 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
 2025-07-27 14:29:18,223 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 13:47:37,858 INFO o.s.b.StartupInfoLogger [main] Starting TarkovPmcToolsApplication using Java 17.0.9 with PID 1492 (C:\workspace\tarkov-pmc-tools\target\classes started by user in C:\workspace\tarkov-pmc-tools)
+2025-07-28 13:47:37,861 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-07-28 13:47:39,082 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-28 13:47:39,095 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-28 13:47:39,104 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-28 13:47:39,105 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-28 13:47:39,188 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-28 13:47:39,188 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1276 ms
+2025-07-28 13:47:39,369 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 6 mappings in 'requestMappingHandlerMapping'
+2025-07-28 13:47:39,451 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-28 13:47:39,484 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-28 13:47:39,568 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-28 13:47:39,634 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-28 13:47:39,683 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-28 13:47:39,691 INFO o.s.b.StartupInfoLogger [main] Started TarkovPmcToolsApplication in 2.56 seconds (process running for 3.179)
+2025-07-28 13:47:51,525 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-28 13:47:51,525 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-07-28 13:47:51,525 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected StandardServletMultipartResolver
+2025-07-28 13:47:51,526 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected AcceptHeaderLocaleResolver
+2025-07-28 13:47:51,526 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected FixedThemeResolver
+2025-07-28 13:47:51,527 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@72c49a1b
+2025-07-28 13:47:51,527 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@1ad9a691
+2025-07-28 13:47:51,528 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-28 13:47:51,528 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2025-07-28 13:47:51,536 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/", parameters={}
+2025-07-28 13:47:51,547 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.MainController#showHomePage()
+2025-07-28 13:47:51,563 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 13:47:51,743 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-07-28 13:47:51,814 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/css/style.css", parameters={}
+2025-07-28 13:47:51,818 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 13:47:51,822 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 304 NOT_MODIFIED
+2025-07-28 13:47:53,728 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/allAmmo", parameters={}
+2025-07-28 13:47:53,728 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 13:47:55,169 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-3] Cached ammo json updated.
+2025-07-28 13:47:55,266 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 13:47:55,434 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 13:47:58,722 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 13:47:58,723 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 13:47:58,724 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-4] Cached ammo json returned.
+2025-07-28 13:47:58,743 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-4] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 13:47:58,755 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-07-28 13:48:02,568 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/favicon.ico", parameters={}
+2025-07-28 13:48:02,569 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 13:48:02,571 DEBUG o.s.w.s.r.ResourceHttpRequestHandler [http-nio-8080-exec-5] Resource not found
+2025-07-28 13:48:02,576 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-07-28 13:48:02,576 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 404 NOT_FOUND
+2025-07-28 13:48:02,580 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] "ERROR" dispatch for GET "/error", parameters={}
+2025-07-28 13:48:02,581 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-07-28 13:48:02,592 DEBUG o.s.w.s.m.m.a.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-5] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-07-28 13:48:02,594 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] Writing [{timestamp=Mon Jul 28 13:48:02 EEST 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-07-28 13:48:02,611 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Exiting from "ERROR" dispatch, status 404
+2025-07-28 13:58:14,858 INFO o.s.b.StartupInfoLogger [main] Starting TarkovPmcToolsApplication using Java 17.0.9 with PID 10560 (C:\workspace\tarkov-pmc-tools\target\classes started by user in C:\workspace\tarkov-pmc-tools)
+2025-07-28 13:58:14,860 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-07-28 13:58:15,790 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-28 13:58:15,801 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-28 13:58:15,804 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-28 13:58:15,805 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-28 13:58:15,882 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-28 13:58:15,882 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 968 ms
+2025-07-28 13:58:16,054 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 6 mappings in 'requestMappingHandlerMapping'
+2025-07-28 13:58:16,136 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-28 13:58:16,155 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-28 13:58:16,246 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-28 13:58:16,294 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-28 13:58:16,341 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-28 13:58:16,353 INFO o.s.b.StartupInfoLogger [main] Started TarkovPmcToolsApplication in 2.132 seconds (process running for 2.499)
+2025-07-28 13:58:22,950 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-28 13:58:22,950 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-07-28 13:58:22,950 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected StandardServletMultipartResolver
+2025-07-28 13:58:22,950 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected AcceptHeaderLocaleResolver
+2025-07-28 13:58:22,950 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected FixedThemeResolver
+2025-07-28 13:58:22,951 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@c5801da
+2025-07-28 13:58:22,951 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@750180e2
+2025-07-28 13:58:22,952 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-28 13:58:22,952 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2025-07-28 13:58:22,960 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/", parameters={}
+2025-07-28 13:58:22,969 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.MainController#showHomePage()
+2025-07-28 13:58:22,984 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 13:58:23,145 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-07-28 13:58:23,607 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/allAmmo", parameters={}
+2025-07-28 13:58:23,608 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 13:58:24,843 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-2] Cached ammo json updated.
+2025-07-28 13:58:24,932 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-2] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 13:58:25,093 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-07-28 13:58:26,191 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 13:58:26,192 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 13:58:26,192 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-3] Cached ammo json returned.
+2025-07-28 13:58:26,210 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 13:58:26,222 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 14:02:27,264 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js.map", parameters={}
+2025-07-28 14:02:27,267 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/webjars/bootstrap/5.2.3/css/bootstrap.min.css.map", parameters={}
+2025-07-28 14:02:27,267 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:02:27,267 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:02:27,299 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-07-28 14:02:27,299 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2025-07-28 14:04:27,084 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:04:27,084 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:04:27,085 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-10] Cached ammo json returned.
+2025-07-28 14:04:27,093 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-10] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:04:27,100 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2025-07-28 14:04:31,182 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:04:31,182 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:04:31,183 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-1] Cached ammo json returned.
+2025-07-28 14:04:31,190 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:04:31,195 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-07-28 14:04:31,213 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/webjars/bootstrap/5.2.3/css/bootstrap.min.css", parameters={}
+2025-07-28 14:04:31,214 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:04:31,218 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/css/style.css", parameters={}
+2025-07-28 14:04:31,218 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js", parameters={}
+2025-07-28 14:04:31,218 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-07-28 14:04:31,219 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:04:31,219 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:04:31,222 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 14:04:31,222 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-07-28 14:04:31,463 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/favicon.ico", parameters={}
+2025-07-28 14:04:31,463 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:04:31,465 DEBUG o.s.w.s.r.ResourceHttpRequestHandler [http-nio-8080-exec-5] Resource not found
+2025-07-28 14:04:31,468 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-07-28 14:04:31,469 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 404 NOT_FOUND
+2025-07-28 14:04:31,473 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] "ERROR" dispatch for GET "/error", parameters={}
+2025-07-28 14:04:31,474 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-07-28 14:04:31,483 DEBUG o.s.w.s.m.m.a.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-5] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-07-28 14:04:31,485 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] Writing [{timestamp=Mon Jul 28 14:04:31 EEST 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-07-28 14:04:31,499 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Exiting from "ERROR" dispatch, status 404
+2025-07-28 14:07:06,236 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:07:06,237 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:07:06,237 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-8] Cached ammo json returned.
+2025-07-28 14:07:06,246 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-8] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:07:06,251 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2025-07-28 14:07:06,275 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/css/style.css", parameters={}
+2025-07-28 14:07:06,276 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:07:06,278 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Completed 304 NOT_MODIFIED
+2025-07-28 14:07:08,051 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:07:08,052 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:07:08,052 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-1] Cached ammo json returned.
+2025-07-28 14:07:08,058 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:07:08,062 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-07-28 14:07:08,079 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/webjars/bootstrap/5.2.3/css/bootstrap.min.css", parameters={}
+2025-07-28 14:07:08,079 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:07:08,082 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/css/style.css", parameters={}
+2025-07-28 14:07:08,082 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js", parameters={}
+2025-07-28 14:07:08,083 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-07-28 14:07:08,083 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:07:08,083 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:07:08,085 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-07-28 14:07:08,086 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 14:07:08,266 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/favicon.ico", parameters={}
+2025-07-28 14:07:08,267 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:07:08,269 DEBUG o.s.w.s.r.ResourceHttpRequestHandler [http-nio-8080-exec-5] Resource not found
+2025-07-28 14:07:08,270 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-07-28 14:07:08,270 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 404 NOT_FOUND
+2025-07-28 14:07:08,270 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] "ERROR" dispatch for GET "/error", parameters={}
+2025-07-28 14:07:08,271 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-07-28 14:07:08,271 DEBUG o.s.w.s.m.m.a.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-5] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-07-28 14:07:08,272 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] Writing [{timestamp=Mon Jul 28 14:07:08 EEST 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-07-28 14:07:08,272 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Exiting from "ERROR" dispatch, status 404
+2025-07-28 14:12:44,814 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:12:44,815 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:12:45,660 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-8] Cached ammo json updated.
+2025-07-28 14:12:45,666 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-8] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:12:45,670 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2025-07-28 14:12:45,692 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/css/style.css", parameters={}
+2025-07-28 14:12:45,692 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:12:45,694 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Completed 304 NOT_MODIFIED
+2025-07-28 14:12:45,743 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/favicon.ico", parameters={}
+2025-07-28 14:12:45,743 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:12:45,745 DEBUG o.s.w.s.r.ResourceHttpRequestHandler [http-nio-8080-exec-1] Resource not found
+2025-07-28 14:12:45,745 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-07-28 14:12:45,745 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 404 NOT_FOUND
+2025-07-28 14:12:45,745 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] "ERROR" dispatch for GET "/error", parameters={}
+2025-07-28 14:12:45,746 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-07-28 14:12:45,746 DEBUG o.s.w.s.m.m.a.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-1] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-07-28 14:12:45,746 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] Writing [{timestamp=Mon Jul 28 14:12:45 EEST 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-07-28 14:12:45,747 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Exiting from "ERROR" dispatch, status 404
+2025-07-28 14:13:41,162 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:13:41,162 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:13:41,162 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-2] Cached ammo json returned.
+2025-07-28 14:13:41,170 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-2] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:13:41,174 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-07-28 14:13:56,990 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:13:56,990 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:13:56,990 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-3] Cached ammo json returned.
+2025-07-28 14:13:56,996 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:13:57,000 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 14:14:06,174 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:14:06,174 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:14:06,174 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-5] Cached ammo json returned.
+2025-07-28 14:14:06,179 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-5] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:14:06,183 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2025-07-28 14:14:06,198 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/webjars/bootstrap/5.2.3/css/bootstrap.min.css", parameters={}
+2025-07-28 14:14:06,198 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:14:06,200 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/css/style.css", parameters={}
+2025-07-28 14:14:06,200 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:14:06,201 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js", parameters={}
+2025-07-28 14:14:06,201 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2025-07-28 14:14:06,201 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:14:06,203 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2025-07-28 14:14:06,203 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-07-28 14:14:06,423 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/favicon.ico", parameters={}
+2025-07-28 14:14:06,424 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:14:06,426 DEBUG o.s.w.s.r.ResourceHttpRequestHandler [http-nio-8080-exec-8] Resource not found
+2025-07-28 14:14:06,426 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-07-28 14:14:06,426 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 404 NOT_FOUND
+2025-07-28 14:14:06,426 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] "ERROR" dispatch for GET "/error", parameters={}
+2025-07-28 14:14:06,426 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-07-28 14:14:06,426 DEBUG o.s.w.s.m.m.a.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-8] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-07-28 14:14:06,426 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] Writing [{timestamp=Mon Jul 28 14:14:06 EEST 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-07-28 14:14:06,427 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Exiting from "ERROR" dispatch, status 404
+2025-07-28 14:16:08,229 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:16:08,230 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:16:08,230 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-4] Cached ammo json returned.
+2025-07-28 14:16:08,235 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-4] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:16:08,238 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-07-28 14:18:31,504 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:18:31,505 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:18:31,505 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-9] Cached ammo json returned.
+2025-07-28 14:18:31,509 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-9] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:18:31,513 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2025-07-28 14:18:31,529 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/css/style.css", parameters={}
+2025-07-28 14:18:31,529 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:18:31,531 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 304 NOT_MODIFIED
+2025-07-28 14:19:31,718 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:19:31,719 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:19:31,719 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-10] Cached ammo json returned.
+2025-07-28 14:19:31,723 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-10] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:19:31,727 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2025-07-28 14:19:49,195 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:19:49,195 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:19:49,196 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-1] Cached ammo json returned.
+2025-07-28 14:19:49,200 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:19:49,204 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-07-28 14:20:28,700 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:20:28,701 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:20:28,701 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-2] Cached ammo json returned.
+2025-07-28 14:20:28,706 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-2] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:20:28,709 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-07-28 14:20:32,383 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:20:32,383 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:20:32,383 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-5] Cached ammo json returned.
+2025-07-28 14:20:32,388 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-5] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:20:32,391 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2025-07-28 14:20:33,905 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:20:33,905 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:20:33,906 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-3] Cached ammo json returned.
+2025-07-28 14:20:33,910 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:20:33,915 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 14:20:33,931 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/webjars/bootstrap/5.2.3/css/bootstrap.min.css", parameters={}
+2025-07-28 14:20:33,931 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:20:33,933 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/css/style.css", parameters={}
+2025-07-28 14:20:33,934 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2025-07-28 14:20:33,934 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:20:33,934 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js", parameters={}
+2025-07-28 14:20:33,935 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:20:33,937 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2025-07-28 14:20:33,937 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-07-28 14:20:34,136 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/favicon.ico", parameters={}
+2025-07-28 14:20:34,137 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:20:34,138 DEBUG o.s.w.s.r.ResourceHttpRequestHandler [http-nio-8080-exec-8] Resource not found
+2025-07-28 14:20:34,139 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-07-28 14:20:34,139 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 404 NOT_FOUND
+2025-07-28 14:20:34,139 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] "ERROR" dispatch for GET "/error", parameters={}
+2025-07-28 14:20:34,139 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-07-28 14:20:34,140 DEBUG o.s.w.s.m.m.a.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-8] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-07-28 14:20:34,140 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] Writing [{timestamp=Mon Jul 28 14:20:34 EEST 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-07-28 14:20:34,141 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Exiting from "ERROR" dispatch, status 404
+2025-07-28 14:20:57,760 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:20:57,761 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:20:57,761 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-10] Cached ammo json returned.
+2025-07-28 14:20:57,765 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-10] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:20:57,768 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2025-07-28 14:20:57,785 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/webjars/bootstrap/5.2.3/css/bootstrap.min.css", parameters={}
+2025-07-28 14:20:57,786 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:20:57,788 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-07-28 14:20:57,789 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/css/style.css", parameters={}
+2025-07-28 14:20:57,789 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:20:57,789 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js", parameters={}
+2025-07-28 14:20:57,790 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:20:57,791 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-07-28 14:20:57,792 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-07-28 14:20:57,890 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/favicon.ico", parameters={}
+2025-07-28 14:20:57,891 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:20:57,892 DEBUG o.s.w.s.r.ResourceHttpRequestHandler [http-nio-8080-exec-5] Resource not found
+2025-07-28 14:20:57,892 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-07-28 14:20:57,893 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 404 NOT_FOUND
+2025-07-28 14:20:57,893 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] "ERROR" dispatch for GET "/error", parameters={}
+2025-07-28 14:20:57,893 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-07-28 14:20:57,894 DEBUG o.s.w.s.m.m.a.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-5] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-07-28 14:20:57,894 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] Writing [{timestamp=Mon Jul 28 14:20:57 EEST 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-07-28 14:20:57,894 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Exiting from "ERROR" dispatch, status 404
+2025-07-28 14:21:13,473 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 14:21:13,474 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 14:21:13,474 INFO c.b.t.s.a.AmmoGraphQLService [http-nio-8080-exec-3] Cached ammo json returned.
+2025-07-28 14:21:13,478 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:21:13,481 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 14:21:13,499 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/webjars/bootstrap/5.2.3/css/bootstrap.min.css", parameters={}
+2025-07-28 14:21:13,500 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:21:13,503 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2025-07-28 14:21:13,503 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/css/style.css", parameters={}
+2025-07-28 14:21:13,503 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js", parameters={}
+2025-07-28 14:21:13,503 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:21:13,503 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:21:13,505 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-07-28 14:21:13,505 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2025-07-28 14:21:13,678 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/favicon.ico", parameters={}
+2025-07-28 14:21:13,678 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:21:13,680 DEBUG o.s.w.s.r.ResourceHttpRequestHandler [http-nio-8080-exec-8] Resource not found
+2025-07-28 14:21:13,680 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-07-28 14:21:13,680 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 404 NOT_FOUND
+2025-07-28 14:21:13,680 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] "ERROR" dispatch for GET "/error", parameters={}
+2025-07-28 14:21:13,681 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-07-28 14:21:13,681 DEBUG o.s.w.s.m.m.a.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-8] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-07-28 14:21:13,681 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] Writing [{timestamp=Mon Jul 28 14:21:13 EEST 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-07-28 14:21:13,682 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Exiting from "ERROR" dispatch, status 404
+2025-07-28 14:59:46,312 INFO o.s.b.StartupInfoLogger [main] Starting TarkovPmcToolsApplication using Java 17.0.9 with PID 13500 (C:\workspace\tarkov-pmc-tools\target\classes started by user in C:\workspace\tarkov-pmc-tools)
+2025-07-28 14:59:46,315 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-07-28 14:59:47,265 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-28 14:59:47,275 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-28 14:59:47,277 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-28 14:59:47,278 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-28 14:59:47,354 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-28 14:59:47,355 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 986 ms
+2025-07-28 14:59:47,521 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 6 mappings in 'requestMappingHandlerMapping'
+2025-07-28 14:59:47,596 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-28 14:59:47,622 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-28 14:59:47,703 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-28 14:59:47,750 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-28 14:59:47,792 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-28 14:59:47,802 INFO o.s.b.StartupInfoLogger [main] Started TarkovPmcToolsApplication in 2.119 seconds (process running for 2.487)
+2025-07-28 14:59:51,747 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-28 14:59:51,747 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-07-28 14:59:51,747 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected StandardServletMultipartResolver
+2025-07-28 14:59:51,747 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected AcceptHeaderLocaleResolver
+2025-07-28 14:59:51,747 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected FixedThemeResolver
+2025-07-28 14:59:51,748 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@51e1d83a
+2025-07-28 14:59:51,748 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@7665b273
+2025-07-28 14:59:51,748 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-28 14:59:51,749 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2025-07-28 14:59:51,756 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/", parameters={}
+2025-07-28 14:59:51,765 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.MainController#showHomePage()
+2025-07-28 14:59:51,780 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:59:51,944 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-07-28 14:59:51,971 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/css/style.css", parameters={}
+2025-07-28 14:59:51,974 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:59:51,977 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 304 NOT_MODIFIED
+2025-07-28 14:59:53,267 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/", parameters={}
+2025-07-28 14:59:53,267 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.MainController#showHomePage()
+2025-07-28 14:59:53,268 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 14:59:53,274 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 14:59:53,291 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/webjars/bootstrap/5.2.3/css/bootstrap.min.css", parameters={}
+2025-07-28 14:59:53,292 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:59:53,293 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/css/style.css", parameters={}
+2025-07-28 14:59:53,293 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js", parameters={}
+2025-07-28 14:59:53,293 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:59:53,294 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 14:59:53,298 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2025-07-28 14:59:53,299 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-07-28 14:59:53,300 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-07-28 14:59:53,418 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/favicon.ico", parameters={}
+2025-07-28 14:59:53,419 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 14:59:53,421 DEBUG o.s.w.s.r.ResourceHttpRequestHandler [http-nio-8080-exec-7] Resource not found
+2025-07-28 14:59:53,423 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-07-28 14:59:53,424 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 404 NOT_FOUND
+2025-07-28 14:59:53,428 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] "ERROR" dispatch for GET "/error", parameters={}
+2025-07-28 14:59:53,430 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-07-28 14:59:53,444 DEBUG o.s.w.s.m.m.a.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-7] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-07-28 14:59:53,446 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] Writing [{timestamp=Mon Jul 28 14:59:53 EEST 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-07-28 14:59:53,477 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Exiting from "ERROR" dispatch, status 404
+2025-07-28 14:59:54,942 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/allAmmo", parameters={}
+2025-07-28 14:59:54,943 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 14:59:54,949 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-8] Cached ammo json updated.
+2025-07-28 15:00:13,844 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-8] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:00:14,000 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2025-07-28 15:00:19,800 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 15:00:19,801 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:00:19,802 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-9] Cached ammo json returned.
+2025-07-28 15:00:19,817 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-9] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:00:19,831 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2025-07-28 15:15:08,954 INFO o.s.b.StartupInfoLogger [main] Starting TarkovPmcToolsApplication using Java 17.0.9 with PID 8564 (C:\workspace\tarkov-pmc-tools\target\classes started by user in C:\workspace\tarkov-pmc-tools)
+2025-07-28 15:15:08,958 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-07-28 15:15:09,882 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-28 15:15:09,893 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-28 15:15:09,895 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-28 15:15:09,896 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-28 15:15:09,970 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-28 15:15:09,971 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 964 ms
+2025-07-28 15:15:10,174 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 6 mappings in 'requestMappingHandlerMapping'
+2025-07-28 15:15:10,275 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-28 15:15:10,292 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-28 15:15:10,356 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-28 15:15:10,409 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-28 15:15:10,463 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-28 15:15:10,475 INFO o.s.b.StartupInfoLogger [main] Started TarkovPmcToolsApplication in 2.162 seconds (process running for 2.531)
+2025-07-28 15:15:18,605 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-28 15:15:18,605 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-07-28 15:15:18,606 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected StandardServletMultipartResolver
+2025-07-28 15:15:18,606 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected AcceptHeaderLocaleResolver
+2025-07-28 15:15:18,606 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected FixedThemeResolver
+2025-07-28 15:15:18,606 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5930ef21
+2025-07-28 15:15:18,607 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@67007aa5
+2025-07-28 15:15:18,607 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-28 15:15:18,607 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2025-07-28 15:15:18,616 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/", parameters={}
+2025-07-28 15:15:18,626 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.MainController#showHomePage()
+2025-07-28 15:15:18,640 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:15:18,800 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-07-28 15:15:18,829 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/css/style.css", parameters={}
+2025-07-28 15:15:18,832 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 15:15:18,836 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 304 NOT_MODIFIED
+2025-07-28 15:15:20,315 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/allAmmo", parameters={}
+2025-07-28 15:15:20,315 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 15:15:20,325 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-3] Cached ammo json updated.
+2025-07-28 15:15:21,655 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:15:21,809 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 15:15:22,993 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 15:15:22,993 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:15:22,994 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-4] Cached ammo json returned.
+2025-07-28 15:15:23,015 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-4] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:15:23,030 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-07-28 15:16:07,934 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 15:16:07,935 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:16:07,935 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-5] Cached ammo json returned.
+2025-07-28 15:16:07,946 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-5] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:16:07,953 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2025-07-28 15:16:09,480 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 15:16:09,480 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:16:09,481 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-6] Cached ammo json returned.
+2025-07-28 15:16:09,489 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-6] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:16:09,494 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-07-28 15:16:09,510 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/webjars/bootstrap/5.2.3/css/bootstrap.min.css", parameters={}
+2025-07-28 15:16:09,511 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 15:16:09,517 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/css/style.css", parameters={}
+2025-07-28 15:16:09,517 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 15:16:09,517 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js", parameters={}
+2025-07-28 15:16:09,518 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-28 15:16:09,523 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2025-07-28 15:16:09,524 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2025-07-28 15:16:09,525 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2025-07-28 15:16:09,658 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/favicon.ico", parameters={}
+2025-07-28 15:16:09,659 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 15:16:09,661 DEBUG o.s.w.s.r.ResourceHttpRequestHandler [http-nio-8080-exec-10] Resource not found
+2025-07-28 15:16:09,664 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-07-28 15:16:09,664 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Completed 404 NOT_FOUND
+2025-07-28 15:16:09,668 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] "ERROR" dispatch for GET "/error", parameters={}
+2025-07-28 15:16:09,669 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-07-28 15:16:09,678 DEBUG o.s.w.s.m.m.a.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-10] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-07-28 15:16:09,681 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] Writing [{timestamp=Mon Jul 28 15:16:09 EEST 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-07-28 15:16:09,698 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Exiting from "ERROR" dispatch, status 404
+2025-07-28 15:18:15,336 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 15:18:15,337 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:18:15,337 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-4] Cached ammo json returned.
+2025-07-28 15:18:15,345 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-4] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:18:15,350 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-07-28 15:23:47,377 INFO o.s.b.StartupInfoLogger [main] Starting TarkovPmcToolsApplication using Java 17.0.9 with PID 3188 (C:\workspace\tarkov-pmc-tools\target\classes started by user in C:\workspace\tarkov-pmc-tools)
+2025-07-28 15:23:47,379 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-07-28 15:23:48,324 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-28 15:23:48,334 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-28 15:23:48,336 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-28 15:23:48,337 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-28 15:23:48,413 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-28 15:23:48,413 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 991 ms
+2025-07-28 15:23:48,595 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 6 mappings in 'requestMappingHandlerMapping'
+2025-07-28 15:23:48,668 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-28 15:23:48,688 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-28 15:23:48,753 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-28 15:23:48,802 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-28 15:23:48,857 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-28 15:23:48,869 INFO o.s.b.StartupInfoLogger [main] Started TarkovPmcToolsApplication in 2.103 seconds (process running for 2.463)
+2025-07-28 15:23:55,589 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-28 15:23:55,589 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-07-28 15:23:55,589 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected StandardServletMultipartResolver
+2025-07-28 15:23:55,589 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected AcceptHeaderLocaleResolver
+2025-07-28 15:23:55,590 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected FixedThemeResolver
+2025-07-28 15:23:55,590 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@23f1ab8f
+2025-07-28 15:23:55,591 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@4b0a1b7b
+2025-07-28 15:23:55,591 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-28 15:23:55,591 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2025-07-28 15:23:55,599 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/", parameters={}
+2025-07-28 15:23:55,607 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.MainController#showHomePage()
+2025-07-28 15:23:55,623 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:23:55,783 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-07-28 15:23:56,578 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/allAmmo", parameters={}
+2025-07-28 15:23:56,580 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 15:23:56,589 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-2] Cached ammo json updated.
+2025-07-28 15:23:58,026 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-2] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:23:58,187 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-07-28 15:23:59,163 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 15:23:59,163 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:23:59,163 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-3] Cached ammo json returned.
+2025-07-28 15:23:59,185 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:23:59,198 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 15:25:11,038 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 15:25:11,039 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:25:11,039 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-6] Cached ammo json returned.
+2025-07-28 15:25:11,048 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-6] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:25:11,056 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-07-28 15:25:11,076 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/css/style.css", parameters={}
+2025-07-28 15:25:11,079 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-28 15:25:11,083 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 304 NOT_MODIFIED
+2025-07-28 15:26:08,074 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 15:26:08,075 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:26:08,075 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-8] Cached ammo json returned.
+2025-07-28 15:26:08,083 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-8] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:26:08,087 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2025-07-28 15:27:01,378 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 15:27:01,379 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:27:01,379 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-10] Cached ammo json returned.
+2025-07-28 15:27:01,388 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-10] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:27:01,395 ERROR o.t.TemplateEngine [http-nio-8080-exec-10] [THYMELEAF][http-nio-8080-exec-10] Exception processing template "ammo": An error happened during template parsing (template: "class path resource [templates/ammo.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/ammo.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "${buyFor.price} '+' ${buyFor.currency}" (template: "ammo" - line 37, col 12)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "${buyFor.price} '+' ${buyFor.currency}" (template: "ammo" - line 37, col 12)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+2025-07-28 15:27:01,399 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-10] Error rendering view [org.thymeleaf.spring6.view.ThymeleafView@255a09cd]
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/ammo.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "${buyFor.price} '+' ${buyFor.currency}" (template: "ammo" - line 37, col 12)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "${buyFor.price} '+' ${buyFor.currency}" (template: "ammo" - line 37, col 12)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+2025-07-28 15:27:01,400 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Failed to complete request: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/ammo.html]")
+2025-07-28 15:27:01,401 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/ammo.html]")] with root cause
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "${buyFor.price} '+' ${buyFor.currency}" (template: "ammo" - line 37, col 12)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-07-28 15:27:01,415 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] "ERROR" dispatch for GET "/error?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 15:27:01,418 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2025-07-28 15:27:01,427 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-10] Selected 'text/html' given [text/html, text/html;q=0.8]
+2025-07-28 15:27:01,432 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Exiting from "ERROR" dispatch, status 500
+2025-07-28 15:27:55,306 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/ammo?normalizedName=45-acp-match-fmj", parameters={masked}
+2025-07-28 15:27:55,307 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:27:55,307 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-1] Cached ammo json returned.
+2025-07-28 15:27:55,313 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:27:55,319 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-07-28 15:29:15,727 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/allAmmo", parameters={}
+2025-07-28 15:29:15,728 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 15:29:15,728 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-4] Cached ammo json returned.
+2025-07-28 15:29:15,734 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-4] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:29:15,769 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-07-28 15:29:16,965 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/ammo?normalizedName=45-acp-rip", parameters={masked}
+2025-07-28 15:29:16,966 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:29:16,966 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-5] Cached ammo json returned.
+2025-07-28 15:29:16,972 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-5] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:29:16,976 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2025-07-28 15:29:19,056 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/allAmmo", parameters={}
+2025-07-28 15:29:19,057 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 15:29:19,057 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-6] Cached ammo json returned.
+2025-07-28 15:29:19,063 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-6] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:29:19,079 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-07-28 15:29:20,125 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/ammo?normalizedName=45-acp-ap", parameters={masked}
+2025-07-28 15:29:20,125 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:29:20,126 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-7] Cached ammo json returned.
+2025-07-28 15:29:20,132 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-7] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:29:20,137 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2025-07-28 15:29:26,066 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/allAmmo", parameters={}
+2025-07-28 15:29:26,066 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 15:29:26,066 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-8] Cached ammo json returned.
+2025-07-28 15:29:26,071 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-8] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:29:26,084 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2025-07-28 15:29:27,908 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/ammo?normalizedName=45-acp-lasermatch-fmj", parameters={masked}
+2025-07-28 15:29:27,909 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:29:27,909 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-9] Cached ammo json returned.
+2025-07-28 15:29:27,913 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-9] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:29:27,918 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2025-07-28 15:29:30,953 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/allAmmo", parameters={}
+2025-07-28 15:29:30,953 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 15:29:30,954 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-10] Cached ammo json returned.
+2025-07-28 15:29:30,960 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-10] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:29:30,976 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2025-07-28 15:29:35,847 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/ammo?normalizedName=127x55mm-ps12b", parameters={masked}
+2025-07-28 15:29:35,847 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:29:35,848 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-1] Cached ammo json returned.
+2025-07-28 15:29:35,852 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:29:35,856 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-07-28 15:29:42,559 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/ammo?normalizedName=127x55mm-ps12a", parameters={masked}
+2025-07-28 15:29:42,559 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:29:42,559 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-3] Cached ammo json returned.
+2025-07-28 15:29:42,566 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:29:42,573 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-07-28 15:29:45,992 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/ammo?normalizedName=127x55mm-ps12", parameters={masked}
+2025-07-28 15:29:45,993 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:29:45,993 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-2] Cached ammo json returned.
+2025-07-28 15:29:45,997 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-2] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:29:46,001 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-07-28 15:29:49,700 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/ammo?normalizedName=127x55mm-ps12b", parameters={masked}
+2025-07-28 15:29:49,700 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:29:49,700 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-4] Cached ammo json returned.
+2025-07-28 15:29:49,704 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-4] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:29:49,707 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-07-28 15:30:03,139 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/ammo?normalizedName=50-bmg-hp", parameters={masked}
+2025-07-28 15:30:03,140 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:30:03,140 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-5] Cached ammo json returned.
+2025-07-28 15:30:03,144 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-5] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:30:03,147 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2025-07-28 15:30:06,264 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/ammo?normalizedName=50-bmg-m21", parameters={masked}
+2025-07-28 15:30:06,265 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:30:06,265 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-6] Cached ammo json returned.
+2025-07-28 15:30:06,269 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-6] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:30:06,272 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-07-28 15:30:17,736 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/allAmmo?sort=damage&order=asc", parameters={masked}
+2025-07-28 15:30:17,737 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 15:30:17,737 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-8] Cached ammo json returned.
+2025-07-28 15:30:17,744 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-8] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:30:17,752 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2025-07-28 15:30:19,894 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/allAmmo?sort=damage&order=desc", parameters={masked}
+2025-07-28 15:30:19,894 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 15:30:19,895 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-9] Cached ammo json returned.
+2025-07-28 15:30:19,897 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-9] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:30:19,909 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2025-07-28 15:30:53,555 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/allAmmo", parameters={}
+2025-07-28 15:30:53,555 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAllAmmoPage(String, String, Model)
+2025-07-28 15:30:53,556 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-10] Cached ammo json returned.
+2025-07-28 15:30:53,558 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-10] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:30:53,567 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2025-07-28 15:30:58,929 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/ammo?normalizedName=127x55mm-ps12b", parameters={masked}
+2025-07-28 15:30:58,930 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.bieliaiev.tarkov_pmc_tools.controller.AmmoController#showAmmoPage(String, Model)
+2025-07-28 15:30:58,930 INFO c.b.t.s.a.AmmoService [http-nio-8080-exec-1] Cached ammo json returned.
+2025-07-28 15:30:58,932 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-07-28 15:30:58,936 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK

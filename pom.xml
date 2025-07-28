@@ -54,6 +54,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/com.github.k0kubun/graphql-query-builder -->
+		<dependency>
+			<groupId>com.github.k0kubun</groupId>
+			<artifactId>graphql-query-builder</artifactId>
+			<version>0.4.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
