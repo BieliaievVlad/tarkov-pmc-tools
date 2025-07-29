@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bieliaiev.tarkov_pmc_tools.dto.BuyForDto;
 import com.bieliaiev.tarkov_pmc_tools.dto.ammo.AmmoDto;
-import com.bieliaiev.tarkov_pmc_tools.service.ammo.AmmoService;
+import com.bieliaiev.tarkov_pmc_tools.dto.weapon.WeaponDto;
+import com.bieliaiev.tarkov_pmc_tools.service.AmmoService;
+import com.bieliaiev.tarkov_pmc_tools.service.WeaponService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -18,7 +20,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AmmoController {
 
-	private final AmmoService service;
+	private final AmmoService ammoService;
+	private final WeaponService weaponService;
 	
 	@GetMapping("/allAmmo")
 	public String showAllAmmoPage(
@@ -27,7 +30,7 @@ public class AmmoController {
 			Model model) {
 		
 		try {
-			List<AmmoDto> allAmmo = service.sortAmmoList(sort, order);
+			List<AmmoDto> allAmmo = ammoService.sortAmmoList(sort, order);
 			model.addAttribute("allAmmo", allAmmo);
 		} catch (IOException | InterruptedException e) {
 			e.printStackTrace();
@@ -40,13 +43,17 @@ public class AmmoController {
 	
 	@GetMapping("/ammo")
 	public String showAmmoPage(@RequestParam String normalizedName, Model model) {
-
+		
 		AmmoDto ammo;
+		
 		try {
-			ammo = service.getAmmoByNormalizedName(normalizedName);
+			ammo = ammoService.getAmmoByNormalizedName(normalizedName);
 			List<BuyForDto> buyFor = ammo.getBuyFor();
+			List<WeaponDto> weapons = weaponService.getWeaponByCaliber(ammo.getProperties().getCaliber());
+			
 			model.addAttribute("ammo", ammo);
 			model.addAttribute("buyFor", buyFor);
+			model.addAttribute("weapons", weapons);
 		} catch (IOException | InterruptedException e) {
 			e.printStackTrace();
 		}

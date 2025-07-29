@@ -11,6 +11,7 @@ public class ItemDto {
 	private String id;
 	private String name;
 	private String shortName;
+	private String normalizedName;
 	private String description;
 	private String inspectImageLink;
 	private String link;

@@ -2,9 +2,9 @@ package com.bieliaiev.tarkov_pmc_tools.cache;
 
 import org.springframework.stereotype.Component;
 
-import com.bieliaiev.tarkov_pmc_tools.dto.ammo.AmmoDto;
+import com.bieliaiev.tarkov_pmc_tools.dto.weapon.WeaponDto;
 
 @Component
-public class AmmoCache extends Cache<AmmoDto> {
+public class WeaponCache extends Cache<WeaponDto> {
 
 }

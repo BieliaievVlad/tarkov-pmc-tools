@@ -1,4 +1,4 @@
-package com.bieliaiev.tarkov_pmc_tools.service.ammo;
+package com.bieliaiev.tarkov_pmc_tools.service;
 
 import java.io.IOException;
 import java.util.Comparator;
@@ -13,53 +13,38 @@ import org.springframework.stereotype.Service;
 import com.bieliaiev.tarkov_pmc_tools.cache.AmmoCache;
 import com.bieliaiev.tarkov_pmc_tools.dto.ammo.AmmoDto;
 import com.bieliaiev.tarkov_pmc_tools.dto.ammo.AmmoPropertiesDto;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
 public class AmmoService {
 
-	private final AmmoGraphQLService service;
+	private final CacheService service;
 	private final AmmoCache ammoCache;
 	private Logger logger = LoggerFactory.getLogger(AmmoService.class);
 	
 	public List<AmmoDto> getAmmoList() throws IOException, InterruptedException {
-		
-		String response = "";
-		Optional<String> json = ammoCache.getIfValid();
-		
-		if (json.isPresent()) {
+
+		List<AmmoDto> result;
+		Optional<List<AmmoDto>> cachedList = ammoCache.getIfValid();
+
+		if (cachedList.isPresent()) {
 			logger.info("Cached ammo json returned.");
-			response = json.get();
-			
+			result = cachedList.get();
+
 		} else {
-		    logger.info("Cached ammo json updated.");
-			response = service.getAllAmmo();
+			logger.info("Cached ammo json updated.");
+			result = service.cacheAmmo();
 		}
-	
-		ObjectMapper mapper = new ObjectMapper();
-		JsonNode root = mapper.readTree(response);
-		JsonNode ammoNode = root.path("data").path("items");
-		
-		if (ammoNode == null || ammoNode.isMissingNode() || !ammoNode.isArray()) {
-			return List.of();
-		}
-		
-		List<AmmoDto> result = mapper.readerForListOf(AmmoDto.class).readValue(ammoNode);
-		
-		return result.stream()
-			    .sorted(Comparator.comparing(
-			            ammo -> Optional.ofNullable(ammo.getProperties())
-			                            .map(AmmoPropertiesDto::getCaliber)
-			                            .orElse(null),
-			            Comparator.nullsLast(Comparator.naturalOrder())
-			        ))
-			        .toList();
+
+		return result.stream().sorted(Comparator.comparing(
+				ammo -> Optional.ofNullable(ammo.getProperties())
+				.map(AmmoPropertiesDto::getCaliber)
+				.orElse(null),
+				Comparator.nullsLast(Comparator.naturalOrder())))
+				.toList();
 	}
-	
+
 	public List<AmmoDto> sortAmmoList(String sort, String order) throws IOException, InterruptedException {
 		
 		List<AmmoDto> result = getAmmoList();

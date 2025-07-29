@@ -19,41 +19,4 @@ public class ItemService {
 
 	private final GraphQLService service;
 	
-	public List<ItemDto> getItems() throws IOException, InterruptedException {
-		String response = service.getAllItems();
-		
-		ObjectMapper mapper = new ObjectMapper();
-		JsonNode root = mapper.readTree(response);
-		JsonNode itemsNode = root.path("data").path("items");
-		
-		if (itemsNode == null || itemsNode.isMissingNode() || !itemsNode.isArray()) {
-		    return List.of();
-		}
-		
-		List<ItemDto> result = mapper.readerForListOf(ItemDto.class).readValue(itemsNode);
-		
-		return result.stream()
-				.sorted(Comparator.comparing(ItemDto :: getName))
-				.toList();
-	}
-	
-	public List<ItemDto> getItemsByCategory(String category) throws IOException, InterruptedException {
-		
-		String response = service.getItemsByCategory(category);
-		
-		ObjectMapper mapper = new ObjectMapper();
-		JsonNode root = mapper.readTree(response);
-		JsonNode itemNode = root.path("data").path("items");
-		
-		if (itemNode == null || itemNode.isMissingNode() || !itemNode.isArray()) {
-		    return List.of();
-		}
-		
-		List<ItemDto> result = mapper.readerForListOf(ItemDto.class).readValue(itemNode);
-		
-		return result.stream()
-				.filter(Constants.FILTERS.get(category))
-				.sorted(Comparator.comparing(ItemDto :: getShortName))
-				.toList();
-	}
 }

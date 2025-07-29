@@ -13,7 +13,7 @@ public class Constants {
 
 	 public static final String TARKOV_API_URI = "https://api.tarkov.dev/graphql";
 	 public static final String HEADER = "application/json";
-	    public static final Map<String, Predicate<ItemDto>> FILTERS = Map.ofEntries(
+	 public static final Map<String, Predicate<ItemDto>> FILTERS = Map.ofEntries(
 	            entry("Ammo", item -> true),
 	            entry("Shotgun", item -> item.getShortName() != null && item.getShortName().contains("Default")),
 	            entry("AssaultRifle", item -> item.getShortName() != null && item.getShortName().contains("Default")),

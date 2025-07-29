@@ -27,8 +27,6 @@
 		<div class="top-section">
 			<img class="ammo-image" th:src="${ammo.inspectImageLink}" />
 			<div class="description-box" th:text="${ammo.description}"></div>
-		</div>
-		<div class="mt-3">
 			<table class="table table-bordered" style="width: 400px">
 				<tbody>
 					<th:block th:each="buyFor : ${buyFor}">
@@ -102,12 +100,14 @@
 					
 				</thead>
 				<tbody>
-					<tr>
-						<td style="width: 150px">
-							<img th:src="${ammo.inspectImageLink}" style="max-width: 140px"/>	
-						</td>
-							<th th:text="${ammo.properties.ammoType}"></th>
-					</tr>
+					<th:block th:each="weapon:${weapons}">
+						<tr>
+							<td style="width: 150px">
+								<img th:src="${weapon.inspectImageLink}" style="max-width: 140px"/>	
+							</td>
+								<th th:text="${weapon.shortName}"></th>
+						</tr>
+					</th:block>
 				</tbody>
 			</table>
 		</div>

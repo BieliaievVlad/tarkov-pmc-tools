@@ -1,24 +1,28 @@
 package com.bieliaiev.tarkov_pmc_tools.utils;
 
-import com.github.k0kubun.builder.query.graphql.GraphQLQueryBuilder;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
 public class QueryBuilderUtil {
 
-    public static String wrapQuery(String rawQuery) {
-        String escaped = rawQuery.replace("\"", "\\\"");
-        return String.format("{\"query\": \"%s\"}", escaped);
-    }
-//TODO написать 3-5 сложных запросов   
-    public static String test() {
-    	return  GraphQLQueryBuilder.query()
-    		    .object("items", GraphQLQueryBuilder.object()
-    		            .field("name")
-    		            .field("shortName")
-    		            .build()
-    		        )
-    		        .build();
-    }
+	private static final ObjectMapper mapper = new ObjectMapper();
+	
+	public static String buildQuery(String rawQuery) {
+		
+		try {
+			Map<String, Object> body = new HashMap<>();
+			body.put("query", rawQuery);
+			
+			return mapper.writeValueAsString(body);
+			
+		} catch (JsonProcessingException e) {
+			throw new RuntimeException("Error occured while building graphQL query.", e);
+		}
+	}
 }

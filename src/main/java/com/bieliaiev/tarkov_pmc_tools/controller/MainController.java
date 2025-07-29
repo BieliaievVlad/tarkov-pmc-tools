@@ -21,28 +21,4 @@ public class MainController {
 	public String showHomePage() {
 		return "home";
 	}
-	
-	@GetMapping("/items")
-	public String showItems(@RequestParam(required = false) String category, Model model) {
-		
-		if(category == null) {
-			
-			try {
-				model.addAttribute("items", service.getItems());
-			} catch (IOException | InterruptedException e) {
-				e.printStackTrace();
-			}
-			return "items";
-			
-		} else {
-			
-			try {
-				model.addAttribute("items", service.getItemsByCategory(category));
-			} catch (IOException | InterruptedException e) {
-				e.printStackTrace();
-			}
-			
-			return "items";
-		}
-	}
 }
