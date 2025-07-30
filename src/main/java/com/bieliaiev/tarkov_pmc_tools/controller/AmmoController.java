@@ -2,6 +2,7 @@ package com.bieliaiev.tarkov_pmc_tools.controller;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -50,10 +51,12 @@ public class AmmoController {
 			ammo = ammoService.getAmmoByNormalizedName(normalizedName);
 			List<BuyForDto> buyFor = ammo.getBuyFor();
 			List<WeaponDto> weapons = weaponService.getWeaponByCaliber(ammo.getProperties().getCaliber());
+			Map<String, String> icons = weaponService.getIcons();
 			
 			model.addAttribute("ammo", ammo);
 			model.addAttribute("buyFor", buyFor);
 			model.addAttribute("weapons", weapons);
+			model.addAttribute("icons", icons);
 		} catch (IOException | InterruptedException e) {
 			e.printStackTrace();
 		}

@@ -3,12 +3,14 @@ package com.bieliaiev.tarkov_pmc_tools.service;
 import java.io.IOException;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.bieliaiev.tarkov_pmc_tools.cache.WeaponCache;
+import com.bieliaiev.tarkov_pmc_tools.cache.WeaponIconsCache;
 import com.bieliaiev.tarkov_pmc_tools.dto.weapon.WeaponDto;
 import com.bieliaiev.tarkov_pmc_tools.dto.weapon.WeaponPropertiesDto;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +21,7 @@ public class WeaponService {
 
 	private final CacheService service;
 	private final WeaponCache weaponCache;
+	private final WeaponIconsCache weaponIconsCache;
 	private final Logger logger = LoggerFactory.getLogger(WeaponService.class);
 	
 	public List<WeaponDto> getWeaponsList() throws IOException, InterruptedException {
@@ -27,11 +30,10 @@ public class WeaponService {
 		Optional<List<WeaponDto>> cachedList = weaponCache.getIfValid();
 
 		if (cachedList.isPresent()) {
-			logger.info("Cached weapons json returned.");
+			logger.info("Cached weapons list returned.");
 			result = cachedList.get();
 
 		} else {
-			logger.info("Cached weapon json updated.");
 			result = service.cacheWeapons();
 		}
 		
@@ -49,5 +51,9 @@ public class WeaponService {
 				.map(p -> caliber.equals(p.getCaliber()))
 				.orElse(false))
 				.toList();
+	}
+	
+	public Map<String, String> getIcons() {
+		return weaponIconsCache.getIconsCache();
 	}
 }

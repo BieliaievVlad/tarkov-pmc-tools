@@ -103,7 +103,7 @@
 					<th:block th:each="weapon:${weapons}">
 						<tr>
 							<td style="width: 150px">
-								<img th:src="${weapon.inspectImageLink}" style="max-width: 140px"/>	
+								<img th:src="${icons[weapon.normalizedName]}" style="max-width: 140px"/>	
 							</td>
 								<th th:text="${weapon.shortName}"></th>
 						</tr>
