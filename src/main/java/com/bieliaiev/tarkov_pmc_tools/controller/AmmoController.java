@@ -26,16 +26,18 @@ public class AmmoController {
 	
 	@GetMapping("/allAmmo")
 	public String showAllAmmoPage(
+			@RequestParam (required = false) String caliber,
 			@RequestParam (required = false) String sort,
 			@RequestParam (required = false, defaultValue = "asc") String order,
 			Model model) {
 		
 		try {
-			List<AmmoDto> allAmmo = ammoService.sortAmmoList(sort, order);
+			List<AmmoDto> allAmmo = ammoService.sortAmmoList(ammoService.filterAmmoByCaliber(caliber), sort, order);
 			model.addAttribute("allAmmo", allAmmo);
 		} catch (IOException | InterruptedException e) {
 			e.printStackTrace();
 		}
+		model.addAttribute("caliber", caliber);
 		model.addAttribute("sort", sort);
 		model.addAttribute("order", order);
 

@@ -10,7 +10,8 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class AmmoDto {
-
+	
+	private String id;
 	private String name;
 	private String shortName;
 	private String normalizedName;

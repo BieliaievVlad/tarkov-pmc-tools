@@ -9,6 +9,7 @@ public class Queries {
 """
 {
   items (categoryNames: [Ammo]) {
+    id
     name
     normalizedName
     description
