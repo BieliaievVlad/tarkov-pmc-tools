@@ -13,5 +13,6 @@ public class WeaponPresetDto {
 
 	private String name;
 	private String inspectImageLink;
+	private WeaponPresetPropertiesDto properties;
 	private List<ContainsItemsDto> containsItems;
 }

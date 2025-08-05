@@ -53,12 +53,12 @@ public class AmmoController {
 			ammo = ammoService.getAmmoByNormalizedName(normalizedName);
 			List<BuyForDto> buyFor = ammo.getBuyFor();
 			List<WeaponDto> weapons = weaponService.getWeaponByCaliber(ammo.getProperties().getCaliber());
-			Map<String, String> icons = weaponService.getIcons();
+			Map<String, String> calibers = weaponService.getCalibers();
 			
+			model.addAttribute("calibers", calibers);
 			model.addAttribute("ammo", ammo);
 			model.addAttribute("buyFor", buyFor);
 			model.addAttribute("weapons", weapons);
-			model.addAttribute("icons", icons);
 		} catch (IOException | InterruptedException e) {
 			e.printStackTrace();
 		}

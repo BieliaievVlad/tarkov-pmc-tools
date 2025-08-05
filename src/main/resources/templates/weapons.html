@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weapons</title>
+<link rel="stylesheet"
+	href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One:wght@400;700&display=swap" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<body>
+	<div th:replace="~{layout :: navbar}"></div>
+
+	<div class="mt-3">
+		<table class="table table-bordered" style="table-layout: fixed;">
+			<thead>
+				<tr>
+					<th style="width: 170px;">Image</th>
+					<th style="width: 20%;">Name</th>
+					<th style="width: 20%;">Caliber</th>
+					<th style="width: 20%;">Ergonomics</th>
+					<th style="width: 20%;">Vertical Recoil</th>
+					<th style="width: 20%;">Horizontal Recoil</th>
+					<th style="width: 20%;">Accuracy</th>					
+					<th style="width: 20%;">Default Flag</th>					
+					<th style="width: 20%;">Category</th>					
+				</tr>
+			</thead>
+			<tbody>
+				<th:block th:each="weapon : ${weapons}">
+					<tr>
+						<td><img th:src="${weapon.inspectImageLink}" class="img-fluid"
+							style="max-width: 150px"></td>
+						<td th:text="${weapon.shortName}"></td>
+						<td th:text="${weapon.properties.caliber}"></td>
+						<td th:text="${weapon.properties.ergonomics}"></td>
+						<td th:text="${weapon.properties.recoilVertical}"></td>
+						<td th:text="${weapon.properties.recoilHorizontal}"></td>
+						<td th:text="${weapon.properties.moa}"></td>
+						<td th:text="${weapon.properties.defaultFlag}"></td>
+						<td th:text="${weapon.category.normalizedName}"></td>
+					</tr>
+				</th:block>
+			</tbody>
+		</table>
+	</div>
+
+	<script src="/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

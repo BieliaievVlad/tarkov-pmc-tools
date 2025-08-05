@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import com.bieliaiev.tarkov_pmc_tools.cache.AmmoCache;
 import com.bieliaiev.tarkov_pmc_tools.cache.WeaponCache;
-import com.bieliaiev.tarkov_pmc_tools.cache.WeaponIconsCache;
 import com.bieliaiev.tarkov_pmc_tools.dto.ammo.AmmoDto;
 import com.bieliaiev.tarkov_pmc_tools.dto.weapon.WeaponDto;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -23,7 +22,6 @@ public class CacheService {
 
 	private final AmmoCache ammoCache;
 	private final WeaponCache weaponCache;
-	private final WeaponIconsCache weaponIconsCache;
 	private final GraphQLService service;
 	private final Logger logger = LoggerFactory.getLogger(CacheService.class);
 	
@@ -51,11 +49,10 @@ public class CacheService {
 		if (node == null || node.isMissingNode() || !node.isArray()) {
 			return List.of();
 		}
+		
 		List<WeaponDto> result = mapper.readerForListOf(WeaponDto.class).readValue(node);
 		weaponCache.updateCache(result);
 		logger.info("Weapon cache updated.");
-		weaponIconsCache.updateWeaponIconsCache(result);
-		logger.info("Weapon icons cache updated.");
 		
 		return result;
 	}

@@ -29,11 +29,11 @@ public class AmmoService {
 		Optional<List<AmmoDto>> cachedList = ammoCache.getIfValid();
 
 		if (cachedList.isPresent()) {
-			logger.info("Cached ammo json returned.");
+			logger.info("Ammo cache returned.");
 			result = filterAmmo(cachedList.get());
 
 		} else {
-			logger.info("Cached ammo json updated.");
+			logger.info("Ammo cache updated.");
 			result = filterAmmo(service.cacheAmmo());
 		}
 

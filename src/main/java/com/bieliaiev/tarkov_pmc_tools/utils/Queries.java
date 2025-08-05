@@ -55,14 +55,22 @@ public class Queries {
     normalizedName
     description
     inspectImageLink
-    buyFor {
-      vendor {
-        name
+    category{
+      name
+      normalizedName
+    }
+    properties{
+      __typename
+      ...on ItemPropertiesPreset{
+        ergonomics
+        recoilVertical
+        recoilHorizontal
+        moa
+        default
       }
-      price
-      currency
     }
     properties {
+      __typename
       ... on ItemPropertiesWeapon {
         caliber
         ergonomics
@@ -73,13 +81,14 @@ public class Queries {
         presets{
           name
           inspectImageLink
-          containsItems{
-            ...on ContainedItem{
-              item{
-                name
-                normalizedName
-                inspectImageLink
-              }
+          properties{
+            __typename
+            ...on ItemPropertiesPreset{
+              ergonomics
+              recoilVertical
+              recoilHorizontal
+              moa
+              default
             }
           }
         }
