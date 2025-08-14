@@ -1,0 +1,38 @@
+.zoom-cursor {
+    cursor: zoom-in;
+}
+.fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.fullscreen-overlay.show .fullscreen-image {
+    transform: scale(1);
+    opacity: 1;
+}
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+.close-btn:hover {
+    color: #ccc;
+}

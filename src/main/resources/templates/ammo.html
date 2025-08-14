@@ -6,17 +6,11 @@
 <title>Ammo</title>
 <link rel="stylesheet"
 	href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
-</head>
 <link
-	href="https://fonts.googleapis.com/css2?family=Russo+One:wght@400;700&display=swap"
-	rel="stylesheet">
-<link
-	href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"
-	rel="stylesheet">
-<link
-	href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro&display=swap"
+	href="https://fonts.googleapis.com/css2?family=Russo+One:wght@400;700&family=Source+Code+Pro:wght@300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 	rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
+</head>
 <body>
 
 	<div th:replace="~{layout :: navbar}"></div>
@@ -25,7 +19,7 @@
 		<h2 th:text="${ammo.name}"></h2>
 
 		<div class="top-section">
-			<img class="ammo-image" th:src="${ammo.inspectImageLink}" />
+			<img class="zoomable-image zoom-cursor" th:src="${ammo.gridImageLink}" th:data-full="${ammo.image8xLink}" style="width: 100px"/>
 			<div class="description-box" th:text="${ammo.description}"></div>
 			<table class="table table-bordered" style="width: 400px">
 				<tbody>
@@ -107,9 +101,10 @@
 					<th:block th:each="weapon:${weapons}">
 						<tr>
 							<td style="width: 150px">
-								<img th:src="${icons[weapon.normalizedName]}" style="max-width: 140px"/>	
+								<img th:src="${weapon.gridImageLink}" style="max-width: 140px"/>	
 							</td>
-								<th th:text="${weapon.shortName}"></th>
+								<th><a th:href="@{/weapon(normalizedName=${weapon.normalizedName})}"
+									th:text="${weapon.name}" style="font-weight: bold; color: #c7c5b3; cursor: pointer; text-decoration: none;"></a></th>
 						</tr>
 					</th:block>
 				</tbody>
@@ -118,5 +113,6 @@
 	</div>
 
 	<script src="/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/image-zoom.js"></script>
 </body>
 </html>

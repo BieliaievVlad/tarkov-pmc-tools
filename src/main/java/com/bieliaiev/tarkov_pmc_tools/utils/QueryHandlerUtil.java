@@ -14,8 +14,8 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class QueryHandlerUtil {
 	
-	private final Logger logger = LoggerFactory.getLogger(QueryHandlerUtil.class)
-;
+	private final Logger logger = LoggerFactory.getLogger(QueryHandlerUtil.class);
+	
 	public String handleQuery(String rawQuery) throws IOException, InterruptedException {
 		
 		HttpClient client = HttpClient.newBuilder().build();
@@ -34,7 +34,7 @@ public class QueryHandlerUtil {
 		if (response.statusCode() == 200) {
 			return response.body();
 		} else {
-		    logger.warn("Failed to fetch ammo data. Status: {}", response.statusCode());
+		    logger.warn("Failed to fetch data. Status: {}", response.statusCode());
 		    return "";
 		}
 	}

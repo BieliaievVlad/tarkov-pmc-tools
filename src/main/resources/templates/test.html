@@ -12,12 +12,26 @@
 <body>
 	<div th:replace="~{layout :: navbar}"></div>
 
-	<div class="mt-3">
+	<div class="container mt-3" style="max-width: 1500px">
+		<a class="btn custom-btn mt-1 px-3" href="/test?category=shotgun">Shotgun</a>
+		<a class="btn custom-btn mt-1 px-3" href="/test?category=assault-rifle">Assault Rifle</a>
+		<a class="btn custom-btn mt-1 px-3" href="/test?category=assault-carbine">Assault Carbine</a>
+		<a class="btn custom-btn mt-1 px-3" href="/test?category=smg">SMG</a>
+		<a class="btn custom-btn mt-1 px-3" href="/test?category=machinegun">Machinegun</a>
+		<a class="btn custom-btn mt-1 px-3" href="/test?category=marksman-rifle">Marksman Rifle</a>
+		<a class="btn custom-btn mt-1 px-3" href="/test?category=sniper-rifle">Sniper Rifle</a>
+		<a class="btn custom-btn mt-1 px-3" href="/test?category=handgun">Handgun</a>
+		<a class="btn custom-btn mt-1 px-3" href="/test?category=Revolver">Revolver</a>
+	</div>
+
+	<div class="container mt-3" style="max-width: 1500px">
 		<table class="table table-bordered" style="table-layout: fixed;">
 			<thead>
 				<tr>
 					<th style="width: 170px;">Image</th>
 					<th style="width: 20%;">Name</th>					
+					<th style="width: 20%;">Short Name</th>					
+					<th style="width: 20%;">Norm Name</th>					
 					<th style="width: 20%;">Caliber</th>					
 					<th style="width: 20%;">Firemodes</th>					
 					<th style="width: 20%;">Firerate</th>					
@@ -31,10 +45,12 @@
 			<tbody>
 				<th:block th:each="weapon : ${weapons}">
 					<tr>
-						<td><img th:src="${weapon.inspectImageLink}" class="img-fluid"
+						<td><img th:src="${weapon.gridImageLink}" class="img-fluid"
 							style="max-width: 150px"></td>
 						<td th:text="${weapon.name}"></td>
-						<td th:text="${weapon.caliber}"></td>
+						<td th:text="${weapon.shortName}"></td>
+						<td th:text="${weapon.normalizedName}"></td>
+						<td th:text="${calibers[weapon.caliber]}"></td>
 						<td>
 							<ul>
     							<li th:each="mode : ${weapon.fireModes}" th:text="${mode}"></li>

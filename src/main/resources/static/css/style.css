@@ -1,3 +1,4 @@
+@import url("/css/image-zoom.css");
 body {
       font-family: 'Russo One', sans-serif;
       background-color: #2d2d2f; /* общий фон */
@@ -38,7 +39,7 @@ tr:hover td {
 	margin-bottom: 20px;
 }
 
-.ammo-image {
+.item-image {
     max-width: 250px;
     height: auto;
     border-radius: 4px;

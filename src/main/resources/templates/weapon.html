@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weapon</title>
+<link rel="stylesheet"
+	href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Russo+One:wght@400;700&family=Source+Code+Pro:wght@300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+	rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+	<div th:replace="~{layout :: navbar}"></div>
+
+	<div class="container-fluid mt-3">
+		<h2 th:text="${weapon.name}"></h2>
+
+		<div class="top-section">
+			<img class="zoomable-image zoom-cursor" th:src="${weapon.gridImageLink}" th:data-full="${weapon.image8xLink}"/>
+			<div class="description-box" th:text="${weapon.description}"></div>
+		</div>
+
+		<div class="mid-section">
+			<table class="table table-bordered" style="max-width: 400px;">
+				<tbody>
+					<tr>
+						<th>Category</th>
+						<td th:text="${weapon.category}">-</td>
+					</tr>
+					<tr>
+						<th>Caliber</th>
+						<td th:text="${calibers[weapon.caliber]}">-</td>
+					</tr>
+					<tr>
+						<th>Fire Modes</th>
+						<td><ul><li th:each="mode : ${weapon.fireModes}" th:text="${mode}"></li></ul></td>
+					</tr>
+					<tr>
+						<th>Fire Rate</th>
+						<td th:text="${weapon.fireRate}">-</td>
+					</tr>
+					<tr>
+						<th>Ergonomics</th>
+						<td th:text="${weapon.ergonomics}">-</td>
+					</tr>
+					<tr>
+						<th>Vertical Recoil</th>
+						<td th:text="${weapon.recoilVertical}">-</td>
+					</tr>
+					<tr>
+						<th>Horizontal Recoil</th>
+						<td th:text="${weapon.recoilHorizontal}">-</td>
+					</tr>
+					<tr>
+						<th>Accuracy, MOA</th>
+						<td th:text="${weapon.moa}">-</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table table-bordered" style="max-width: 450px">
+				<thead>
+					<tr>
+						<th colspan="2" class="text-center"> Related Ammo</th>
+					</tr>	
+				</thead>
+				<tbody>
+					<th:block th:each="ammo:${ammoList}">
+						<tr>
+							<td style="width: 150px">
+								<img th:src="${ammo.gridImageLink}" style="max-width: 140px"/>	
+							</td>
+								<th><a th:href="@{/ammo(normalizedName=${ammo.normalizedName})}"
+									th:text="${ammo.name}" style="font-weight: bold; color: #c7c5b3; cursor: pointer; text-decoration: none;"></a></th>
+						</tr>
+					</th:block>
+				</tbody>
+			</table>
+			<table class="table table-bordered" style="max-width: 450px">
+				<thead>
+					<tr>
+						<th colspan="2" class="text-center">Presets</th>
+					</tr>	
+				</thead>
+				<tbody>
+					<th:block th:each="preset:${weapon.presets}">
+						<tr>
+							<td style="width: 150px">
+								<img th:src="${preset.gridImageLink}" style="max-width: 140px"/>	
+							</td>
+							<th>
+								<a th:href="@{/preset(normalizedName=${preset.normalizedName})}"
+								   th:text="${preset.shortName}" style="font-weight: bold; color: #c7c5b3; cursor: pointer; text-decoration: none;">
+								</a>
+							</th>
+						</tr>
+					</th:block>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script src="/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/image-zoom.js"></script>
+</body>
+</html>

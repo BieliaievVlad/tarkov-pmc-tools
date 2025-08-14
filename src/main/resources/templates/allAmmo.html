@@ -6,14 +6,11 @@
 <title>Ammo</title>
 <link rel="stylesheet"
 	href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
-</head>
 <link
-	href="https://fonts.googleapis.com/css2?family=Russo+One:wght@400;700&display=swap"
+	href="https://fonts.googleapis.com/css2?family=Russo+One:wght@400;700&family=Source+Code+Pro:wght@300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 	rel="stylesheet">
-<link
-	href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro&display=swap"
-	rel="stylesheet">	
 <link href="/css/style.css" rel="stylesheet">
+</head>
 <body>
 	<div th:replace="~{layout :: navbar}"></div>
 	
@@ -71,7 +68,7 @@
 			<tbody>
 				<th:block th:each="ammo : ${allAmmo}">
 					<tr>
-						<td><img th:src="${ammo.inspectImageLink}" class="img-fluid"
+						<td><img th:src="${ammo.gridImageLink}" class="img-fluid"
 							style="max-width: 100px"></td>
 						<td><a
 							th:href="@{/ammo(normalizedName=${ammo.normalizedName})}"
@@ -89,5 +86,6 @@
 	</div>
 
 	<script src="/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/image-zoom.js"></script>
 </body>
 </html>

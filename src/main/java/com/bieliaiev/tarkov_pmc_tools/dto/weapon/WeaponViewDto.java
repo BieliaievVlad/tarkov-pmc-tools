@@ -12,7 +12,8 @@ public class WeaponViewDto {
 	private String normalizedName;
 	private String category;
 	private String description;
-	private String inspectImageLink;
+	private String gridImageLink;
+	private String image8xLink;
 	private String caliber;
 	private String[] fireModes;
 	private Integer fireRate;

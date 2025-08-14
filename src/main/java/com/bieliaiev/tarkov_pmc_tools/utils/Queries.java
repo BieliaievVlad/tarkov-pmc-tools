@@ -13,7 +13,8 @@ public class Queries {
     name
     normalizedName
     description
-    inspectImageLink
+    gridImageLink
+    image8xLink
     buyFor{
       vendor {
         name
@@ -54,7 +55,8 @@ public class Queries {
     shortName
     normalizedName
     description
-    inspectImageLink
+    gridImageLink
+    image8xLink
     category{
       name
       normalizedName
@@ -80,7 +82,10 @@ public class Queries {
         recoilHorizontal
         presets{
           name
-          inspectImageLink
+          shortName
+          normalizedName
+          gridImageLink
+          image8xLink
           properties{
             __typename
             ...on ItemPropertiesPreset{
@@ -91,11 +96,68 @@ public class Queries {
               default
             }
           }
+          containsItems{
+            ...on ContainedItem{
+              item{
+                name
+                shortName
+                normalizedName
+                gridImageLink
+                image8xLink
+                description
+              }
+            }
+          }
         }
       }
     }
   }
 }
 			
+""";
+	
+	public static final String ALL_MELEE = 
+"""
+{
+  items(categoryNames: [Knife]){
+    name
+    shortName
+    normalizedName
+    description
+    gridImageLink
+    image8xLink
+    properties{
+      ...on ItemPropertiesMelee{
+        slashDamage
+        stabDamage
+        hitRadius
+      }
+    }
+  }
+}			
+""";
+	
+	public static final String ALL_GRENADES = 
+"""
+{
+  items(categoryNames: [ThrowableWeapon]) {
+    name
+    shortName
+    normalizedName
+    description
+    gridImageLink
+    image8xLink
+    properties {
+      ... on ItemPropertiesGrenade {
+        type
+        fuse
+        minExplosionDistance
+        maxExplosionDistance
+        fragments
+        contusionRadius
+      }
+    }
+  }
+}			
 """;
 }

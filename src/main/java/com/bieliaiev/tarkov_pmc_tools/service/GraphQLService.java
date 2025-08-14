@@ -16,4 +16,12 @@ public class GraphQLService {
 	public String getAllWeapons() throws IOException, InterruptedException {
 		return QueryHandlerUtil.handleQuery(Queries.ALL_WEAPONS);
 	}
+	
+	public String getAllMelee() throws IOException, InterruptedException {
+		return QueryHandlerUtil.handleQuery(Queries.ALL_MELEE);
+	}
+	
+	public String getAllThrowables() throws IOException, InterruptedException {
+		return QueryHandlerUtil.handleQuery(Queries.ALL_GRENADES);
+	}
 }

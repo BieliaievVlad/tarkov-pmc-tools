@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bieliaiev.tarkov_pmc_tools.dto.BuyForDto;
 import com.bieliaiev.tarkov_pmc_tools.dto.ammo.AmmoDto;
-import com.bieliaiev.tarkov_pmc_tools.dto.weapon.WeaponDto;
+import com.bieliaiev.tarkov_pmc_tools.dto.weapon.WeaponViewDto;
 import com.bieliaiev.tarkov_pmc_tools.service.AmmoService;
 import com.bieliaiev.tarkov_pmc_tools.service.WeaponService;
 
@@ -52,7 +52,7 @@ public class AmmoController {
 		try {
 			ammo = ammoService.getAmmoByNormalizedName(normalizedName);
 			List<BuyForDto> buyFor = ammo.getBuyFor();
-			List<WeaponDto> weapons = weaponService.getWeaponByCaliber(ammo.getProperties().getCaliber());
+			List<WeaponViewDto> weapons = weaponService.getWeaponByCaliber(ammo.getProperties().getCaliber());
 			Map<String, String> calibers = weaponService.getCalibers();
 			
 			model.addAttribute("calibers", calibers);

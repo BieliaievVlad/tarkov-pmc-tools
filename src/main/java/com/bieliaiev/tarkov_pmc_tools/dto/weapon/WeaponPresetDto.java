@@ -12,7 +12,10 @@ import lombok.Data;
 public class WeaponPresetDto {
 
 	private String name;
-	private String inspectImageLink;
+	private String shortName;
+	private String normalizedName;
+	private String gridImageLink;
+	private String image8xLink;
 	private WeaponPresetPropertiesDto properties;
 	private List<ContainsItemsDto> containsItems;
 }

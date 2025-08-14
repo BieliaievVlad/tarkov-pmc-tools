@@ -16,7 +16,8 @@ public class AmmoDto {
 	private String shortName;
 	private String normalizedName;
 	private String description;
-	private String inspectImageLink;
+	private String gridImageLink;
+	private String image8xLink;
 	private AmmoPropertiesDto properties;
 	private List<BuyForDto> buyFor;
 }

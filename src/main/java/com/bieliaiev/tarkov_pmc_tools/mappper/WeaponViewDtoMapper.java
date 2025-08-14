@@ -1,9 +1,9 @@
 package com.bieliaiev.tarkov_pmc_tools.mappper;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -21,38 +21,50 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class WeaponViewDtoMapper {
 	
+	private static final List<String> NORMALIZED_SUFFIXES = List.of(
+		    "-default", "-lb", "-urbana", "-carbine", "-pecheneg"
+		);
+	private static final List<String> SUFFIXES = List.of(
+			"Default", "LB", "Urbana", "Carbine", "Pecheneg"
+			);
 	private final Logger logger = LoggerFactory.getLogger(WeaponViewDtoMapper.class);
-	
-//TODO переделать под shortName
-	public static List<WeaponViewDto> someName(List<WeaponDto> defaultList, List<WeaponDto> descriptionList) {
+
+	public static List<WeaponViewDto> toViewDto(List<WeaponDto> defaultList, List<WeaponDto> descriptionList) {
 		List<WeaponViewDto> views = new ArrayList<>();
-		Map<String, WeaponDto> map = defaultList.stream()
+		Map<String, WeaponDto> map = descriptionList.stream()
 				.collect(Collectors.toMap(
-						w -> w.getNormalizedName().replace("-default", ""), Function.identity()));
+						w -> w.getNormalizedName(), Function.identity()));
 		
-		for (WeaponDto w : descriptionList) {
-			WeaponDto dtoFromMap = map.get(w.getNormalizedName());
-			if (dtoFromMap == null) {
+		for (WeaponDto w : defaultList) {
+			WeaponDto dtoFromMap;
+			Optional<WeaponDto> opt = map.entrySet().stream()
+					.filter(entry -> entry.getKey().contains(stripNormalizedSuffix(w.getNormalizedName())))
+					.map(Map.Entry :: getValue)
+					.findFirst();
+			if (opt.isPresent()) {
+				dtoFromMap = opt.get();
+			} else {
 				logger.info("Dto from map is null for: " + w.getNormalizedName());
 				continue;
 			}
 			WeaponViewDto view = new WeaponViewDto();
-			WeaponPropertiesInterface wProps = w.getProperties();
 			WeaponPropertiesInterface dtoProps = dtoFromMap.getProperties();
-			view.setName(w.getName());
+			WeaponPropertiesInterface wProps = w.getProperties();
+			view.setName(stripSuffix(w.getName()));
 			view.setShortName(w.getShortName());
-			view.setNormalizedName(w.getNormalizedName());
-			view.setCategory(w.getCategory().getNormalizedName());
-			view.setDescription(w.getDescription());
-			view.setInspectImageLink(dtoFromMap.getInspectImageLink());
+			view.setNormalizedName(stripNormalizedSuffix(w.getNormalizedName()));
+			view.setCategory(dtoFromMap.getCategory().getNormalizedName());
+			view.setDescription(dtoFromMap.getDescription());
+			view.setGridImageLink(w.getGridImageLink());
+			view.setImage8xLink(w.getImage8xLink());
 			
-			if (wProps instanceof WeaponPropertiesDto weaponProps) {
+			if (dtoProps instanceof WeaponPropertiesDto weaponProps) {
 				view.setCaliber(weaponProps.getCaliber());
 				view.setFireModes(weaponProps.getFireModes());
 				view.setFireRate(weaponProps.getFireRate());
 				view.setPresets(weaponProps.getPresets());
 			}
-			if (dtoProps instanceof WeaponPresetPropertiesDto presetProps) {
+			if (wProps instanceof WeaponPresetPropertiesDto presetProps) {
 				view.setErgonomics(presetProps.getErgonomics());
 				view.setRecoilVertical(presetProps.getRecoilVertical());
 				view.setRecoilHorizontal(presetProps.getRecoilHorizontal());
@@ -61,5 +73,23 @@ public class WeaponViewDtoMapper {
 			views.add(view);
 		} 
 		return views;
+	}
+	
+	private String stripNormalizedSuffix(String name) {
+	    for (String s : NORMALIZED_SUFFIXES) {
+	        if (name.endsWith(s)) {
+	            return name.substring(0, name.length() - s.length());
+	        }
+	    }
+	    return name;
+	}
+	
+	private String stripSuffix(String name) {
+		for (String s : SUFFIXES) {
+			if (name.endsWith(s)) {
+				return name.substring(0, name.length() - s.length()).trim();
+			}
+		}
+		return name;
 	}
 }

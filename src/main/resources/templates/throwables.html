@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Items</title>
+<title>Grenades</title>
 <link rel="stylesheet"
 	href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
 <link
@@ -13,31 +13,25 @@
 <body>
 	<div th:replace="~{layout :: navbar}"></div>
 
-	<div class="mt-3">
+	<div class="container mt-3" style="max-width: 1500px">
 		<table class="table table-bordered" style="table-layout: fixed;">
 			<thead>
 				<tr>
-					<th style="width: 170px;">Image</th>
-					<th style="width: 20%;">Name</th>
-					<th style="width: 20%;">Base Price</th>
-					<th style="width: 20%;">Average 24h Price</th>
-					<th style="width: 20%;">Last 48h</th>
-					<th style="width: 20%;">Last 48h %</th>
+					<th style="width: 10%;">Image</th>
+					<th style="width: 30%;">Name</th>
+					<th style="width: 30%;">Normal</th>
+					<th style="width: 30%;">Type</th>
 				</tr>
 			</thead>
 			<tbody>
-				<th:block th:each="item : ${items}">
+				<th:block th:each="item : ${throwables}">
 					<tr>
-						<td><img th:src="${item.inspectImageLink}" class="img-fluid"
-							style="max-width: 150px"></td>
-						<td th:text="${item.shortName}"></td>
-						<td th:text="${item.basePrice}"></td>
-						<td
-							th:text="${item.avg24hPrice != null ? item.avg24hPrice : 'No Data'}"></td>
-						<td
-							th:text="${item.changeLast48h != null ? item.changeLast48h : 'No Data'}"></td>
-						<td
-							th:text="${item.changeLast48hPercent != null ? item.changeLast48hPercent : 'No Data'}"></td>
+						<td><img th:src="${item.gridImageLink}" class="img-fluid"
+								 style="max-width: 150px"></td>
+						<td><a th:href="@{/throwable(normalizedName=${item.normalizedName})}"
+							   th:text="${item.name}" style="font-weight: bold; color: #c7c5b3; cursor: pointer; text-decoration: none;"></a></td>
+						<td th:text="${item.normalizedName}"></td>
+						<td th:text="${item.properties.type}"></td>
 					</tr>
 				</th:block>
 			</tbody>

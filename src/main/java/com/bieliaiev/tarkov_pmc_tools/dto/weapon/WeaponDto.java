@@ -16,7 +16,8 @@ public class WeaponDto {
     private String shortName;
     private String normalizedName;
     private String description;
-    private String inspectImageLink;
+    private String gridImageLink;
+    private String image8xLink;
     private ItemCategoryDto category;
     private WeaponPropertiesInterface properties;
     private List<BuyForDto> buyFor;   
