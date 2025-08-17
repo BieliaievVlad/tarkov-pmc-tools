@@ -19,7 +19,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AmmoService {
 
-	private final CacheService service;
+	private final CacheService cacheService;
 	private final AmmoCache ammoCache;
 	private Logger logger = LoggerFactory.getLogger(AmmoService.class);
 	
@@ -34,7 +34,7 @@ public class AmmoService {
 
 		} else {
 			logger.info("Ammo cache updated.");
-			result = filterAmmo(service.cacheAmmo());
+			result = filterAmmo(cacheService.cacheAmmo());
 		}
 
 		return result.stream().sorted(Comparator.comparing(

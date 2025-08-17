@@ -4,7 +4,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
-
+//TODO: unify cache classes (too many subclasses of Cache<T>).
 public abstract class Cache<T> {
 
 	private static final Duration CACHE_TTL = Duration.ofMinutes(60);

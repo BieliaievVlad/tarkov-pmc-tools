@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Armbands</title>
+<link rel="stylesheet"
+	href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Russo+One:wght@400;700&family=Source+Code+Pro:wght@300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+	rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<body>
+	<div th:replace="~{layout :: navbar}"></div>
+
+	<div class="container mt-3" style="max-width: 1500px">
+		<table class="table table-bordered" style="table-layout: fixed;">
+			<thead>
+				<tr>
+					<th style="width: 170px;">Image</th>
+					<th style="width: 50%;">Name</th>
+					<th style="width: 50%;">Normal</th>
+				</tr>
+			</thead>
+			<tbody>
+				<th:block th:each="item : ${armbands}">
+					<tr>
+						<td><img th:src="${item.gridImageLink}" class="img-fluid"
+								 style="max-width: 150px"></td>
+						<td><a th:href="@{/armband(normalizedName=${item.normalizedName})}"
+							   th:text="${item.name}" style="font-weight: bold; color: #c7c5b3; cursor: pointer; text-decoration: none;"></a></td>
+						<td th:text="${item.normalizedName}"></td>
+					</tr>
+				</th:block>
+			</tbody>
+		</table>
+	</div>
+
+	<script src="/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/image-zoom.js"></script>
+</body>
+</html>

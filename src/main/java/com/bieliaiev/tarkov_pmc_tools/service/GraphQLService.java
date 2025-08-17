@@ -24,4 +24,20 @@ public class GraphQLService {
 	public String getAllThrowables() throws IOException, InterruptedException {
 		return QueryHandlerUtil.handleQuery(Queries.ALL_GRENADES);
 	}
+	
+	public String getAllHeadphones() throws IOException, InterruptedException {
+		return QueryHandlerUtil.handleQuery(Queries.ALL_HEADPHONES);
+	}
+	
+	public String getAllArmbands() throws IOException, InterruptedException {
+		return QueryHandlerUtil.handleQuery(Queries.ALL_ARMBANDS);
+	}
+	
+	public String getAllArmor() throws IOException, InterruptedException {
+		return QueryHandlerUtil.handleQuery(Queries.ALL_ARMOR);
+	}
+	
+	public String getAllHeadwear() throws IOException, InterruptedException {
+		return QueryHandlerUtil.handleQuery(Queries.ALL_HEADWEAR);
+	}
 }

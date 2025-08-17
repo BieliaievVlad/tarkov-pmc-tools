@@ -31,7 +31,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class WeaponService {
 
-	private final CacheService service;
+	private final CacheService cacheService;
 	private final WeaponCache weaponCache;
 	private final CaliberCache caliberCache;
 	private final MeleeCache meleeCache;
@@ -99,7 +99,7 @@ public class WeaponService {
 			logger.info("Melee cache returned.");
 			return opt.get();
 		} else {
-			return service.cacheMelee();
+			return cacheService.cacheMelee();
 		}
 	}
 	
@@ -110,7 +110,7 @@ public class WeaponService {
 			logger.info("Throwables cache returned.");
 			return opt.get();
 		} else {
-			return service.cacheThrowables();
+			return cacheService.cacheThrowables();
 		}
 	}
 	
@@ -171,7 +171,7 @@ public class WeaponService {
 			logger.info("Cached weapon list returned.");
 			return optList.get();
 		} else {
-			return service.cacheWeapons();
+			return cacheService.cacheWeapons();
 		}
 	}
 	

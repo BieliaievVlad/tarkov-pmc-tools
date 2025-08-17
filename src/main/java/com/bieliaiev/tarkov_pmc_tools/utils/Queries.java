@@ -160,4 +160,91 @@ public class Queries {
   }
 }			
 """;
+	
+	public static final String ALL_HEADPHONES = 
+"""
+{
+  items(categoryNames: [Headphones]) {
+    name
+    shortName
+    normalizedName
+    description
+    gridImageLink
+    image8xLink
+    properties {
+      ... on ItemPropertiesHeadphone {
+        ambientVolume
+        compressorAttack
+        compressorGain
+        compressorRelease
+        compressorThreshold
+        distanceModifier
+        distortion
+        dryVolume
+      }
+    }
+  }
+}		
+""";
+	
+	public static final String ALL_ARMBANDS = 
+"""
+{
+  items(categoryNames: [ArmBand]) {
+    name
+    shortName
+    normalizedName
+    description
+    gridImageLink
+    image8xLink   
+  }
+}
+""";
+	
+	public static final String ALL_ARMOR = 
+"""
+{
+  items(categoryNames: [Armor]) {
+    name
+    shortName
+    normalizedName
+    description
+    gridImageLink
+    image8xLink 
+        properties{
+      ...on ItemPropertiesArmor{
+        class
+        armorType
+        zones
+      }
+    }  
+  }
+}
+""";
+	
+	public static final String ALL_HEADWEAR = 
+"""
+{
+  items(categoryNames: [Headwear]) {
+    name
+    shortName
+    normalizedName
+    description
+    gridImageLink
+    image8xLink
+    properties{
+      ...on ItemPropertiesHelmet{
+        class
+        armorType
+        durability
+        speedPenalty
+        turnPenalty
+        ergoPenalty
+        deafening
+        blocksHeadset
+      }
+    }
+  }
+}		
+""";
 }
